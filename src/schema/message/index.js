@@ -21,7 +21,8 @@ const typeMap = {
 };
 
 const resolvers = {
-  __resolveType: (obj) => typeMap[obj.value.content.type] || 'DefaultMessage',
+  // __resolveType: (obj) => typeMap[obj.value.content.type] || 'DefaultMessage',
+  __resolveType: (obj) => 'DefaultMessage',
   ...DefaultMessage,
 }
 
